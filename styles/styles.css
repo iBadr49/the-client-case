@@ -175,4 +175,51 @@ caption {
 	}
 }
 
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 20px;
+  border-radius: 1em;
+  border: 2px solid #009aaf;
+  background-color: antiquewhite;
+}
+
+.flexbox-item-1{
+  height: 400px;
+  width: 400px;
+  overflow: hidden auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.flexbox-item-2{
+  height: 400px;
+  width: 400px;
+  overflow: hidden auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.flexbox-item-3{
+  border: 2px solid #009aaf;
+  margin: 40px;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
 
