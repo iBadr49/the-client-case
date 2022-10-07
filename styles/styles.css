@@ -184,6 +184,7 @@ caption {
 
 .flexbox-item {
   width: 200px;
+  padding: 5px;
   margin: 20px;
   border-radius: 1em;
   border: 2px solid #009aaf;
@@ -202,6 +203,7 @@ caption {
 .flexbox-item-2{
   height: 400px;
   width: 400px;
+  padding: 5px;
   overflow: hidden auto;
     overflow-x: hidden;
     overflow-y: auto;
@@ -209,6 +211,7 @@ caption {
 }
 
 .flexbox-item-3{
+  padding: 5px;
   border: 2px solid #009aaf;
   margin: 40px;
   justify-content: center;
