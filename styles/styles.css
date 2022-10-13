@@ -3,12 +3,217 @@ body{
     padding: 0;
 }
 
+/* HomePage */
+
+.homepage{
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  color: #152a45;
+  font-size: 14px;
+}
+
+.homepagina{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #72afa6;
+}
+
+
+/* Navbar */
+
+header {
+  background-color: white;
+  padding: 10px;
+  font-family: 'Montserrat';
+  /* opacity: 0.5; */
+  position: sticky;
+  top: 0;
+  }
+    
+  header ul {
+  display: flex;
+  margin-left: 150px;
+  }
+
+  header ul li {
+  margin-left: 50px;
+  font-size: 15px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.Mini{
+  color: #72afa6;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "box1 box2 box3"
+  "box1 box5 box4"
+  ". . .";
+}
+
+.box1{
+  margin-left: 10em;
+  margin-right: 5px;
+  border-radius: 7px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  grid-area: box1;
+}
+.box2{ 
+  border-radius: 7px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  grid-area: box2;
+}
+.box3{
+ margin-right: 10em;
+ grid-area: box3;
+ overflow-y: auto;
+}
+
+.box5{
+  grid-area: box5;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px #72afa6;
+  margin-bottom: 15px;
+  width: 70%;
+  margin-left: 15%;
+  display: grid;
+}
+
+.box5 h1{
+  font-size: 20px;
+}
+
+.box5 p{
+  margin-left: 10px;
+}
+
+.reminder h1 {
+  font-size: 20px;
+  color: black;
+}
+
+.reminder ul {
+  list-style-type: none;
+  font-size: 14px;
+  background-color: white;
+  padding: 15px 20px 20px;
+  margin-bottom: 15px;
+  display: block;
+  }
+
+.reminder li{
+  border-left: 5px solid #72afa6;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 14px;
+}
+
+.reminder p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.box4 h1{
+  margin: 0;
+  font-size: 20px;
+  color: black;
+  padding: 15px;
+  background-color: white;
+}
+
+.box4 {
+  display: flex;
+  margin-right: 10em;
+  margin-left: 1.3em;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px #72afa6;
+  background-color: white;
+}
+
+.box4 .body{
+  flex: 1;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0,0,0,0,7);
+  padding: 15px;
+}
+
+.box4 .message {
+  background-color: beige;
+  padding: 10px;
+  color: black;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.box4 .user_message {
+  margin-left: auto;
+  background-color: #72afa6;
+}
+
+.box4 .footer form{
+  display: flex;
+ 
+}
+
+form input{
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  font-size: 16px;
+  background-color: beige;
+}
+
+form button{
+  width: 20%;
+  border: none;
+  outline: none;
+  background-color: #72afa6;
+  color: black;
+  cursor: pointer;
+} 
+form button:hover {
+  color: white;
+  transition: 0.2s ease;
+}
+
+
+/* FlexBox style */
+
 h1{
     text-align: center;
+    color: #72afa6;
+}
+
+h2{
+  text-align: center;
 }
 
 .middle{
     position: absolute;
+    margin-top: 1rem;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -39,7 +244,7 @@ h1{
 .btn::before{
     content: "";
     position: absolute;
-    background-color: salmon;
+    background-color: #72afa6;
     left: 0;
     top: 0;
     width: 100%;
@@ -47,8 +252,9 @@ h1{
     z-index: -1;
 }
 
-
+/* Kalender */
 /* declare a 7 column grid on the table */
+
 #calendar {
   margin-left: 10%;  
   margin-bottom: 10%;
@@ -83,15 +289,14 @@ caption {
 }
 
 #calendar .weekdays {
-	background: salmon;  
+	background: #72afa6;  
 }
-
 
 #calendar .weekdays th {
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 20px;
-	border: none !important;
+	border: none;
 	padding: 10px 6px;
 	color: #fff;
 	font-size: 13px;
@@ -111,7 +316,7 @@ caption {
 	text-align: center;
 	margin-bottom: 5px;
 	padding: 4px;
-	background: salmon;
+	background: #72afa6;
 	color: #fff;
 	width: 20px;
 	border-radius: 50%;
@@ -120,7 +325,7 @@ caption {
 }
 
 #calendar .event {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 	font-size: 13px;
 	border-radius: 4px;
 	padding: 5px;
@@ -147,7 +352,6 @@ caption {
 				Mobile Responsiveness
    ============================*/
 
-
 @media(max-width: 768px) {
 
 	#calendar .weekdays, #calendar .other-month {
@@ -155,7 +359,7 @@ caption {
 	}
 
 	#calendar li {
-		height: auto !important;
+		height: auto;
 		border: 1px solid #ededed;
 		width: 100%;
 		padding: 10px;
@@ -175,54 +379,26 @@ caption {
 	}
 }
 
-.flexbox-container {
+/* p Color */
+.color {
+  color: #72afa6;
+}
+
+/* Footer */
+
+.social h4{
+  color: #72afa6;
+}
+
+.social{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.flexbox-item {
-  width: 200px;
-  padding: 5px;
-  margin: 20px;
-  border-radius: 1em;
-  border: 2px solid #009aaf;
-  background-color: antiquewhite;
-}
-
-.flexbox-item-1{
-  height: 400px;
-  width: 400px;
-  overflow: hidden auto;
-    overflow-x: hidden;
-    overflow-y: auto;
+.column, .menu-footer, .info-footer{
+  padding: 0 3vw;
 
 }
-
-.flexbox-item-2{
-  height: 400px;
-  width: 400px;
-  padding: 5px;
-  overflow: hidden auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-}
-
-.flexbox-item-3{
-  padding: 5px;
-  border: 2px solid #009aaf;
-  margin: 40px;
-  justify-content: center;
-  background-color: antiquewhite;
-}
-
-
-
-
-
-
-
-
-
