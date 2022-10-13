@@ -4,6 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* HomePage */
 
 .homepage{
@@ -27,7 +28,8 @@ a:hover{
 header {
   background-color: white;
   padding: 10px;
-  font-family: 'Montserrat';
+  font-family: Arial, Helvetica, sans-serif;
+
   /* opacity: 0.5; */
   position: sticky;
   top: 0;
@@ -107,6 +109,7 @@ header {
 }
 
 .reminder h1 {
+  margin-left: 20px;
   font-size: 20px;
   color: black;
 }
