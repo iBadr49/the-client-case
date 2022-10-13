@@ -30,7 +30,7 @@ welke allergenen hebben gegeven.
 
 <!-- Voeg een link toe naar Github Pages 🌐--> 
 <br>
-🌐 - Link naar mijn live versie: 
+🌐 - Link naar mijn live versie: https://ibadr49.github.io/the-client-case/index.html
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
