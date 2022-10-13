@@ -3,6 +3,7 @@
 # Vini Mini
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 **Vini Mini** heeft als missie om voedselallergie te voorkomen bij baby’s. Hiervoor bieden ze gezonde, makkelijke en betrouwbare voedingssupplementen voor baby’s om allergenen te geven. <br>
+
 Mijn user story: Platform bouwen voor persoonlijke omgeving waarin dagboek wordt bijgehouden. Dit betekent een gepersonaliseerde omgeving voor ouders, om het proces van hun mini makkelijk te
 kunnen volgen. 1) ouders helpen om makkelijk te testen of ze in 3 of 6 stappen voor het eerst pinda
 mogen geven. 2) ouders helpen registreren hoe deze 3/6 stappen zijn gegaan over meerdere dagen.
