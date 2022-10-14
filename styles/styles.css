@@ -64,7 +64,7 @@ header {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
   "box1 box2 box3"
-  "box1 box5 box4"
+  "box1 box2 box4"
   ". . .";
 }
 
@@ -90,7 +90,7 @@ header {
  overflow-y: auto;
 }
 
-.box5{
+.advies{
   grid-area: box5;
   border-radius: 10px;
   box-shadow: 2px 2px 20px #72afa6;
@@ -99,6 +99,11 @@ header {
   margin-left: 15%;
   display: grid;
 }
+.advies p {
+  margin: 10px;
+}
+
+/** 
 
 .box5 h1{
   font-size: 20px;
@@ -106,7 +111,9 @@ header {
 
 .box5 p{
   margin-left: 10px;
-}
+} 
+
+**/
 
 .reminder h1 {
   margin-left: 20px;
