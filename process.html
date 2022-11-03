@@ -25,14 +25,16 @@
     <div class="homepage">
       Startpagina / <a href="index.html" class="homepagina"> Mini-Dagboek </a>
     </div>
-    <h1>Process</h1>
-    <h2>
-      Uit de test komt dat een 3-staps schema voor het geven van pinda het beste
-      past bij jouw Mini
-    </h2>
+    <div class="h1h2">
+      <h1>Proces</h1>
+      <h2>
+        Uit de test komt dat een 3-staps schema voor het geven van pinda het
+        beste past bij jouw Mini
+      </h2>
+    </div>
     <div class="flex">
       <div class="box1">
-        <p><strong>Thuis 3-staps schema voor het geven van pinda</strong></p>
+        <h3>Thuis 3-staps schema voor het geven van pinda</h3>
         <p>
           Als je baby jonger is dan 8 maanden en er geen risicofactoren zijn
           zoals eczeem of eerdere reacties op voeding, dan kun je thuis pinda’s
@@ -61,7 +63,7 @@
       </div>
 
       <div class="box2">
-        <strong><p>Thuis 3-staps schema voor het geven van ei</p></strong>
+        <h3>Thuis 3-staps schema voor het geven van ei</h3>
         <p>
           Als je baby tussen de 4 en 8 maanden is; en er geen risicofactoren
           zijn zoals eczeem of eerdere reacties op voeding, dan kun je thuis ei
@@ -76,7 +78,7 @@
       </div>
       <div class="box3">
         <div class="reminder">
-          <h1>Reminder</h1>
+          <h3>Reminder</h3>
           <ul class="ul">
             <li>
               25/08 Jouw Mini ... (CHECK je kalender)
@@ -97,8 +99,9 @@
           </ul>
         </div>
       </div>
-      <div class="box4">
-        <h1>Chat</h1>
+<!---
+        <div class="box4"> 
+        <h3>Chat</h3>
         <div class="body">
           <p class="message">Hoi, ik wil jullie wat vragen!</p>
           <p class="message user_message">All day every day!</p>
@@ -110,8 +113,23 @@
           </form>
         </div>
       </div>
+    -->
+
       <div class="box5"></div>
     </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
     <footer class="social">
       <div class="column">
         <ul>
@@ -138,5 +156,14 @@
         <p>Veelgestelde vragen</p>
       </div>
     </footer>
+
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
   </body>
 </html>
